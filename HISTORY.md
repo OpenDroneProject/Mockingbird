@@ -19,3 +19,6 @@ Mockingbird "Payload" second print:
 
 Mockingbird prototype wing balancing test:  
 ![](./images/mockingbird_proto_1.jpg)
+
+Prototype evolution:  
+![](./images/construction/v1_proto.jpg)

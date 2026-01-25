@@ -1,6 +1,6 @@
 # Tools
 
-An exhaustive list of tools required to build any of the designs in this guide.
+List of tools required for this build
 
 ## Assembly
 Bambu A1 Mini or Larger $250
