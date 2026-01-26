@@ -1,8 +1,8 @@
 # MockingBird
 
-<img src="../images/MockingbirdRender.png" alt="Mockingbird Render" width="500">  
-<img src="../images/mockingbird_proto_1.jpg" alt="Mockingbird Prototype from Below" width="500">
-<img src="../images/mockingbird_proto_2.jpg" alt="Mockingbird Prototype from above" width="500">  
+<img src="./images/MockingbirdRender.png" alt="Mockingbird Render" width="500">  
+<img src="./images/history/mockingbird_proto_1.jpg" alt="Mockingbird Prototype from Below" width="500">
+<img src="./images/history/mockingbird_proto_2.jpg" alt="Mockingbird Prototype from above" width="500">  
 
 
 Mockingbird is intended to be the cheapest and simplest drone to make. It has an initial setup cost of about $250 (not including tools), but the unit cost is about $90. Most of that is the electronics.
