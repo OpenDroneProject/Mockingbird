@@ -20,12 +20,53 @@ LW-PLA Parts
 - front fairing
 - rear fairing
 
-
 M4 and M2 screws
 
 ## Wings and Tailfin
 
-5mm Foamboard
+**Requirements**  
+- one and a half pieces of 20"x30" 5mm Foamboard
+- clear tape
+- cutting surface
+- cutting blade
+- printer
+- hot glue gun
+- 5mm x 300mm or longer carbon fiber rod
+
+The PDF files at `./CAD/Foam Tempaltes/PDF` are pre-sized to print at real scale. Make sure you are printing at 1:1 scale without margins or resizing.
+
+Print and tape together the templates.  
+<img src="./images/construction/template_example.jpg" alt="Horizontal Stabilizer Template" width="400">  
+
+You should have 4 templates, a left wing, and right wing, vertical and horizontal stabilizers.  
+<img src="./images/construction/templates.jpg" alt="Templates" width="400">  
+
+### Tailfin Assembly
+
+TODO
+
+### Wings
+
+This project uses a similar construction method to the "armin wing"
+
+[Armin Wing Part 1](https://www.youtube.com/watch?v=UNqFnzmm0vI)  
+[Armin Wing Part 2](https://www.youtube.com/watch?v=RgBSbnZh_KM)  
+[Armin Wing Part 3](https://www.youtube.com/watch?v=-z_mBiPw6z0)  
+[Armin Wing Part 4](https://www.youtube.com/watch?v=idnT5eP5Snw)  
+
+Alternative guide:
+[Armin Wing Full Build Guide](https://www.youtube.com/watch?v=karr67ZYho4)  
+
+However, because this design is modular, you can create your own custom airfoil with simple construction, like the [Kline-Fogelman airfoil](https://en.wikipedia.org/wiki/Kline%E2%80%93Fogleman_airfoil).  
+
+Half-depth cuts along the bend lines of the airfoil:  
+<img src="./images/construction/wing_cuts.jpg" alt="Making half-depth cuts along the wing template" width="400" style="transform: rotate(90deg);">  
+
+Carbon fiber spar positioned with foam spar. Notice the pencil markings copied over from the template:  
+<img src="./images/construction/carbon_fiber_spar.jpg" alt="Carbon fiber spar position" width="500">  
+
+Carbon fiber spar sandwiched between foam spars:  
+<img src="./images/construction/carbon_fiber_spar_2.jpg" alt="Carbon fiber spar sandwiched in foam" width="500">  
 
 ## Control Surfaces and Pushrods
 
