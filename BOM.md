@@ -1,66 +1,94 @@
-## Bill of Materials
+# Bill of Materials
 
-2S 2200mAh battery   (1)  
+## Raw Materials for Build
+
+Battery (2S or 3S, with XT60 connector, ideally)   (1)  
 SG09  Servo (4)  
-30A Electronic Speed Controller (1)  
+30A Electronic Speed Controller (bullet pins and XT60 connector) (1)  
 Motor (800-1400kv) (1)  
-Servo extension cables (12") (2)  
+Servo extension cables (6") (2)  
+Servo Y Connector (1)
 Propeller (8x4E) (1)  
 BetaFPV ELRS Mini Receiver (1)  
 
 20"x30" foamboard (2)    
 Carbon Fiber rod (5mm diameter) (2)    
-Wooden Dowel (5mm diameter) (2)    
-Adhesive velcro strips (2")  
-Velcro straps (12") (2)  
+Adhesive velcro strips (6")  
 PETG filament (100g)  
 PLA or LW-PLA filament (100g)  
 Hot Glue (100g)  
+
+M2 screws
+M4 screws
+Push Rods
 
 **Optional (for autonomy)**
 SpeedyBee F405 Wing flight computer (1)  
 Beitian BF-180GNSS module (1)
 
-# Tools 
-x-acto knife or snap-blade utility knife 
+**Optional (for FPV)**
+TBD
+
+## Tools 
+x-acto knife, box cutter, or snap-blade utility knife 
 cutting surface (cutting mat on flat table)  
 packing tape  
 fine sharpie  
 masking tape  
-squishy adhesive  
-twist ties  
+twist ties  (optional for cable management)
 hex wrench set  
 small phillips head screwdriver (for servo screws)  
-hot glue gun  
+large hot glue gun  
 3D printer (Bambu A1 recommended)  
-rubber bands  
 needle-nose pliers  
-scissors  
 
-**Optional**  
-shrink-wrap  
-mallet  
+# Tools
+
+List of tools required for this build
+
+## Assembly
+Bambu A1 Mini or Larger $250
+X-Acto knife $1 Harbor Freight
+cutting surface $10
+Printer
+Metal Ruler $1
+Large Hot Glue gun $20
+Large Hot Glue sticks $10
+
+## Control
+
+RadioMaster Pocket $80
+18650 Battery for radio (2x) $16
+Battery Charger $30-$50
+
+## Electronics
+
+Pinecil soldering iron $40
+100W USB-C charger for Pinecil $30
+
+## Design
+
+Digital Calipers (Vinca brand) $22
 
 ## Cost
 
 | Item                      | cost | qty for planes | cost per unit |
 |---------------------------|------|----------------|---------------|
-| Hook and Loop Velcro      |   13 |             16 |        0.8125 |
 | Adhesive Velcro           |   10 |            360 | 0.02777777778 |
 | M2 screws                 |   10 |             25 |           0.4 |
+| M4 screws                 |   10 |             25 |           0.4 |
 | Push rods                 |   13 |             10 |           1.3 |
 | ELRS receiver             |   19 |              1 |            19 |
 | 30A ESC                   |   13 |              1 |            13 |
 | 9g servo                  |   14 |              1 |            14 |
 | 5x300mm carbon fiber rods |   10 |              5 |             2 |
 | 3D printer filament       |   50 |             20 |           2.5 |
-| 0.8mm wire                |    9 |            100 |          0.09 |
+| 1.2mm wire                |    9 |            100 |          0.09 |
 | 20"x30" 5mm foamboard     |   54 |             18 |             3 |
-| 5200mAh 2s                |   22 |              2 |            11 |
+| Battery                   |   22 |              2 |            11 |
 | 800-1400kv motor          |   12 |              1 |            12 |
-| Dowels                    |    7 |             30 |  0.2333333333 |
-| rubber bands              |  5.3 |             32 |      0.165625 |
 | servo extender            |   10 |            2.5 |             4 |
+| servo Y-splitter          |   10 |            2.5 |             4 |
 | 8x4 properller            |   12 |              3 |             4 |
 
 Startup Cost: $283
@@ -77,8 +105,8 @@ Unit Cost $88
 | Receiver            | 15g             | 1   | 15g   |
 | Motor               | 41g             | 1   | 41g   |
 | SG 90 Servos        | 19g             | 4   | 36g   |
-| 12" Servo Extenders | 10g             | 2   | 20g   |
-| Straps              | ???             | ?   | ???   |
+| 6" Servo Extenders | 10g             | 2   | 20g   |
+| Veclro              | ???             | ?   | ???   |
 |                     |                 |     | 328g  |
 
 ## Aerofoils
@@ -87,9 +115,8 @@ Unit Cost $88
 |------------------|-----------------|-----|-------|
 | Wings            | 220g            | 1   | 220g  |
 | Carbon Fiber Rod | 11g             | 2   | 22g   |
-| Wooden Stake     | 2g              | 2   | 4g    |
-| Servo Fairings   | 3g              | 2   | 6g    |
 | Tailfin Assembly | 27g             | 1   | 27g   |
+| M4 Screws        | 3g              | 8   | 24g   |
 |                  |                 |     | 279g  |
 
 ## Pod
@@ -98,15 +125,15 @@ Unit Cost $88
 |---------------------|-----------------|-----|-------|
 | Motor Mount         | 18g             | 1   | 18g   |
 | Electronics Payload | 56g             | 1   | 56g   |
-| M4 Screws           | 3g              | 8   | 24g   |
+| M2 Screws           | 3g              | 8   | 24g   |
 | Servo Holder        | ???             | 1   | ???   |
-| Front Cap           | ???             | 1   | ???   |
-| End Cap             | ???             | 1   | ???   |
-| Body Fairing        | ???             | 1   | ???   |
+| Front Fairing       | ???             | 1   | ???   |
+| Rear Fairing        | ???             | 1   | ???   |
+| Bottom Fairing      | ???             | 1   | ???   |
 |                     |                 |     | 88g   |
   
 TOTAL: 708g  
-ACTUAL MEASURED: 720g  
+ACTUAL MEASURED: 775g  
 
 ## Autonomy
 flight computer -- 42g
@@ -135,6 +162,11 @@ Motor Mount -- 1hr 10 mins
 Small Parts -- 2hrs 30 mins
 Front Fairing -- 45 mins
 
+Bottom Fairing -- 1hr 
+Rear Fairing -- ?
+Top Fairing -- 15 mins
+Servo Fairings - 45 mins
+
 Total: 6hr 45 mins
 
 ### Foamboard
@@ -146,6 +178,9 @@ Wing Fold -- 30 mins per wing
 Total: ~1hr
 
 ### Assembly
+
+Wing assembly -- 30 mins
+Body assembly -- 30 mins
 
 ### Testing and Electronics Config
 
