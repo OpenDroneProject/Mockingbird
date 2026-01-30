@@ -6,7 +6,7 @@
 
 <img src="./images/construction/BIG_PARTS.jpg" width="600">    
 
-TODO: make the letters in this picture easier to read
+TODO: make the letters in this picture easier to read  
 <img src="./images/construction/SMALL_PARTS.jpg" width="600">    
 <img src="./images/construction/SERVO_FAIRINGS.jpg" width="600">    
 <img src="./images/construction/CONTROL.jpg" width="600">     
