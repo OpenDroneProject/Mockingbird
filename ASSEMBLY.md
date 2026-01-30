@@ -5,6 +5,8 @@
 #### 3D Printed Parts
 
 <img src="./images/construction/BIG_PARTS.jpg" width="600">    
+
+TODO: make the letters in this picture easier to read
 <img src="./images/construction/SMALL_PARTS.jpg" width="600">    
 <img src="./images/construction/SERVO_FAIRINGS.jpg" width="600">    
 <img src="./images/construction/CONTROL.jpg" width="600">     
@@ -41,11 +43,12 @@ These parts can be printed in anything, but I recommend using PETG for anything 
 
 #### Other
 
-| Item          | Qty |
-|---------------|-----|
-| Servo         | 4   |
-| Motor         | 1   |
-| Control horns | 4   |
+| Item           | Qty |
+|----------------|-----|
+| Servo          | 4   |
+| Motor          | 1   |
+| Control horns  | 4   |
+| 1.2mm Pushrods | 4   |
 
 ### Pod Assembly
 
