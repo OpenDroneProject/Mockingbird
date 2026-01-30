@@ -49,3 +49,5 @@ Stall Speed Curve
 Target weight is 650g, which would give us a stall speed of ~5mph.
 
 
+Estimated max TWR
+3S battery, 1400KV motor, 8x4E prop: 1400g

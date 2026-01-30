@@ -5,10 +5,10 @@
 
 - [ ] Full step-by-step assembly guide
 
-    - [ ] wing build guide
-    - [ ] tailfin build guide
-    - [ ] 3D print assembly guide
-    - [ ] tailfin mounting and control surface guide
+    - [x] wing build guide
+    - [x] tailfin build guide
+    - [x] 3D print assembly guide
+    - [x] tailfin mounting and control surface guide
 
     -  [ ] exhaustive BOM
         - [ ] all tools used
@@ -16,14 +16,22 @@
         - [ ] 3D printed part (with labels and letter key)
 
     - [ ] electronics configuration guide
+        - [ ] plugging everything in
+        - [ ] setting up bldc motor and esc
+        - [ ] pairing ELRS receiver and controller
+        - [ ] creating a profile and configuring a mix
 
-- [ ] add corvus flight footage to website
-
-Estimated max TWR
-3S battery, 1400KV motor, 8x4E prop: 1400g
+    - [ ] supplementary info
 
 
+- [ ] film flight
+- [ ] add specs to datasheet
 - [ ] design rear fairing
+    - [ ] update assembly guide with rear fairing
+
+
+- [ ] create a PDF from the markdown files
+
 
 - [ ] release
 - [ ] Film full step-by-step guide
@@ -43,31 +51,14 @@ e payload -- 14g
 total: 30g
 new weight ~745g
 
-# PROTOTYPE FINISHED!
-
-Questions:
-- how long did it take to make? (1 hr assembly for 3D printed parts)
-- how many materials did it require?
-
-- [ ] update BOM
-- [ ] tally final cost
-- [ ] tally final weight (775g)
+### WEBSITE TODO
 
 - [ ] add educational links to website
+- [ ] add corvus flight footage to website
 
-### Fly It
-- [ ] get images of it flying
-
+### Performance Tuning
 - [ ] compare flight with vs without front fairing
 - [ ] compare flight with vs without middle fairing
-
-- [ ] redesign rear fairing
-    - [ ] bottom part
-    - [ ] top part
-
-### Create Step-By-Step construction guide
-- [ ] markdown with images
-- [ ] video
 
 ### Engineering Docs
 - [ ] interface control document
@@ -84,3 +75,4 @@ https://github.com/FreeCAD/FreeCAD-library/tree/master
 - [ ] weight optimization
 - [ ] improved electronics stack with autonomy
 - [ ] winglets and other performance enhancements
+- [ ] assembly video
