@@ -22,6 +22,13 @@ LW-PLA Parts
 
 M4 and M2 screws
 
+MG09 (metal)
+SG09 (plastic)
+
+cutting jigs 3D prints
+
+cutting guide, how to do half cuts and 45 degree cuts
+
 ## Wings and Tailfin
 
 **Requirements**  
