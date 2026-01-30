@@ -1,8 +1,10 @@
 # TODO
-- [ ] create servo fairing .3mf file
-- [ ] create wire guide .3mf file
+- [x] mirror the servo fairing
+- [x] create servo fairing .3mf file
+- [x] create wire guide .3mf file
 
 - [ ] Full step-by-step assembly guide
+
     - [ ] wing build guide
     - [ ] tailfin build guide
     - [ ] 3D print assembly guide
@@ -17,6 +19,10 @@
 
 - [ ] add corvus flight footage to website
 
+Estimated max TWR
+3S battery, 1400KV motor, 8x4E prop: 1400g
+
+
 - [ ] design rear fairing
 
 - [ ] release
@@ -27,6 +33,15 @@
 Wing screw-in hole spacing: 40mm long, 30mm wide
 
 1/13/2026 -- 730g fully-loaded
+1/27/2026 -- 775g fully-loaded, no rear fairing
+
+Estimated weight reduction from printing with OVERTURE PLA AIR, 30% per part.
+Savings:
+bottom fairing -- 10g
+front fairing -- 6g
+e payload -- 14g
+total: 30g
+new weight ~745g
 
 # PROTOTYPE FINISHED!
 
