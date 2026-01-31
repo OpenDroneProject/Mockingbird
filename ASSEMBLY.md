@@ -133,8 +133,7 @@ Pyramid sandwich example.
 The folding step is a bit difficult to describe. I recommend watching [this video](https://youtu.be/bllvhjr51Lk?si=4DFRSW2RofPoi4HL&t=564) from timestamps 9:30 to 12:30 if you are a beginner and you struggle to assemble the wing. My wing design is *heavily* inspired by the wing on the Joytrainer Mini, and the construction techniques are identical.
 
 Take the left and right wings, and connect them with the carbon fiber spar. The spar should be half in the left wing and half in the right wing.
-
-TODO: add a picture of putting the wings together
+<img src="./images/construction/wings.jpg" width="600">
 
 Using the Wing Screw Plate as a guide, use a screwdriver to puncture the fully-glued wing with 4 holes.  
 <img src="./images/construction/WINGS_4.jpg" width="600">
