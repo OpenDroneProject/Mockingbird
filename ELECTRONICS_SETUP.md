@@ -1,5 +1,33 @@
 # Electronics Setup
 
+## Binding ELRS
+
+### Traditional Method (No Binding Phrase)
+
+1. Power the receiver on and off three times consecutively (with roughly 2-second intervals).
+2. The LED should start blinking twice in a cycle, indicating it is in binding mode.
+3. Open the ExpressLRS LUA script on your transmitter and select the [Bind] option.
+4. The receiver LED will turn solid when successfully paired.
+
+### Binding Phrase Method (Recommended)
+
+1. Use the ELRS Configurator to flash both your transmitter and receiver with a custom binding phrase.
+2. Power on the receiver. It will automatically bind with the transmitter without needing button presses or power cycling.
+
+[How to flash ELRS via WIFI](https://www.youtube.com/watch?v=8poK--ln5J0)
+
+## Calibrating Motor
+
+1. **Preparation:** Connect the BLDC motor to the ESC. Connect the ESC signal wire to your receiver (usually Channel 3) or servo tester.
+2. **Maximum Throttle:** Turn on the transmitter and set the throttle stick to maximum (full up).
+3. **Power On:** Plug the battery into the ESC. The motor will beep to indicate it has recognized the maximum throttle position.
+4. **Minimum Throttle:** As soon as the beeping stops (or a musical tone is heard), move the throttle stick to the minimum position (full down).
+5. **Confirmation:** The ESC will produce a series of beeps indicating the number of battery cells, followed by a long beep, confirming successful calibration.
+6. **Finalize:** Unplug the battery, then plug it back in. The ESC is now calibrated and ready to use. 
+
+## Radiomaster Setup
+
+TODO: ADD PICTURES
 
 ---
   Radiomaster Pocket Button Layout
@@ -74,72 +102,6 @@
   │ Beeper Switch    │ Select SC or SD, press scroll wheel                                │
   └──────────────────┴────────────────────────────────────────────────────────────────────┘
   8. On confirmation screen, long-press scroll wheel to finish
-
-  ---
-  Step 4: Set Up Channels (Method B: Manual)
-
-  Navigate to Mixes
-
-  1. From home screen with your model selected, press MDL
-  2. Press PAGE > three times to reach Mixes
-
-  Add Arm Switch to CH5
-
-  1. Scroll down to CH5 (it will be empty)
-  2. Press scroll wheel → select Edit (or just press to add)
-  3. You'll see a source selection screen
-  4. Flip the switch you want to use (e.g., SA) - the radio auto-detects it
-  5. The source will show SA (or whichever switch you flipped)
-  6. Press RTN to save
-
-  Add Flight Mode Switch to CH6
-
-  1. Scroll to CH6
-  2. Press scroll wheel
-  3. Flip switch SB (3-position switch)
-  4. Press RTN
-
-  Add Beeper to CH7
-
-  1. Scroll to CH7
-  2. Press scroll wheel
-  3. Flip switch SC or SD
-  4. Press RTN
-
-  ---
-  Step 5: Verify Your Setup
-
-  1. Press RTN until you're at the home screen
-  2. Press MDL → PAGE > three times to Mixes
-  3. Move sticks and flip switches - you should see the channel values change on screen:
-  ┌─────────┬────────┬──────────────────────────────────────────┐
-  │ Channel │ Source │              Expected Value              │
-  ├─────────┼────────┼──────────────────────────────────────────┤
-  │ CH1     │ Ail    │ -100 to +100 with right stick left/right │
-  ├─────────┼────────┼──────────────────────────────────────────┤
-  │ CH2     │ Ele    │ -100 to +100 with right stick up/down    │
-  ├─────────┼────────┼──────────────────────────────────────────┤
-  │ CH3     │ Thr    │ -100 to +100 with left stick up/down     │
-  ├─────────┼────────┼──────────────────────────────────────────┤
-  │ CH4     │ Rud    │ -100 to +100 with left stick left/right  │
-  ├─────────┼────────┼──────────────────────────────────────────┤
-  │ CH5     │ SA     │ Jumps between -100/+100 when flipped     │
-  ├─────────┼────────┼──────────────────────────────────────────┤
-  │ CH6     │ SB     │ Shows -100/0/+100 for 3 positions        │
-  └─────────┴────────┴──────────────────────────────────────────┘
-  ---
-  Quick Reference: Switch Names on Radiomaster Pocket
-  ┌────────┬───────────────────────┬────────────┬──────────────┐
-  │ Switch │       Location        │ Positions  │   Good For   │
-  ├────────┼───────────────────────┼────────────┼──────────────┤
-  │ SA     │ Left shoulder, front  │ 2-position │ Arm          │
-  ├────────┼───────────────────────┼────────────┼──────────────┤
-  │ SB     │ Left shoulder, back   │ 3-position │ Flight modes │
-  ├────────┼───────────────────────┼────────────┼──────────────┤
-  │ SC     │ Right shoulder, front │ 2-position │ Beeper       │
-  ├────────┼───────────────────────┼────────────┼──────────────┤
-  │ SD     │ Right shoulder, back  │ 2-position │ Turtle mode  │
-  └────────┴───────────────────────┴────────────┴──────────────┘
   ---
   Sources:
   - https://www.flitetest.com/articles/creating-a-new-model-on-the-radiomaster-pocket

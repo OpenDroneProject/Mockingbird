@@ -39,6 +39,13 @@ TODO: make the letters in this picture easier to read
 
 These parts can be printed in anything, but I recommend using PETG for anything that will have significant forces acting on it, as it experiences significantly less [creep](https://en.wikipedia.org/wiki/Creep_(deformation)) than PLA.
 
+To make it easier to cut the foamboard, I recommend 3D printing these cutting jigs.  
+
+<img src="./images/jig.png" width="600">    
+<img src="./images/miter.png" width="600">    
+
+The files are at `./Utilities/5mmFoamBoardMiterCutter.stl` and `./Utilities/Foam_board_90_degree_cutter.stl`.
+
 #### Fasteners
 
 | Screw | Length | Qty |
@@ -267,3 +274,35 @@ Congratulations!
 <img src="./images/construction/A18.jpg" width="600">  
 <img src="./images/construction/A21.jpg" width="600">
 
+### Tips and Tricks
+
+#### Servos
+
+There is a difference between the MG90S and SG90 servo. The MG90S has metal gears, and the SG90 has plastic gears. 
+The MG90S weighs about 13g and the SG90 weighs 9g. Using SG90 servos saves 16g overall, which is pretty significant. But MG90S servos are less likely to shear under heavy load. I think SG90 servos are fine for this application. Make sure you get SG90 if you are concerned about weight reduction.
+
+#### Armin Wing Construction
+
+Armin Wings are hard to make (relative to everything elsein this build guide). I recommend watching multiple videos to see how others make them.
+
+[Armin Wing Part 1](https://www.youtube.com/watch?v=UNqFnzmm0vI)  
+[Armin Wing Part 2](https://www.youtube.com/watch?v=RgBSbnZh_KM)  
+[Armin Wing Part 3](https://www.youtube.com/watch?v=-z_mBiPw6z0)  
+[Armin Wing Part 4](https://www.youtube.com/watch?v=idnT5eP5Snw)  
+
+Alternative guide:
+[Armin Wing Full Build Guide](https://www.youtube.com/watch?v=karr67ZYho4)  
+
+#### Other
+
+**Overture AIR PLA**
+Print with normal Generic PLA settings, but disable dynamic flow calibration, and reduce volumetric flow rate by 75% (if it was 12mm^3/s before, change it to 3mm^3/s). Use an untextured plate and apply gluestick beforehand. AIR PLA has a horrible time with adhesion on the first layer. Make sure the filament is dehydrated, as AIR PLA seems to be more susceptible to moisture than normal PLA.
+
+**Print the Electronics Payload at an angle on the Bambu A1 Mini**
+There may be temperature issues at the edges of the printing plate on the Bambu A1 mini. Try printing it at an angle to see if that helps at all.
+
+**Do your wing balancing before you cut your push rods for the tailfin control surfaces to length**   
+It is easier to adjust your balance by moving the tailfin position, so the length of your tailfin will be dependent on the balance. Once that is determined, then you can adjust the length of your pushrods. I would recommend doing balancing several times throughout the build process.
+
+**Use 1.2mm wire control rods for tail control surfaces**  
+The tail control surfaces are far away from the servos, and 0.64mm piano wire will deform. 1.2mm wire is thick enough to withstand the forces, while also deflecting the desired amount along its path from the servo to the control surface.
