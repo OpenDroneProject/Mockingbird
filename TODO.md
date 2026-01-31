@@ -1,37 +1,12 @@
 # TODO
-- [x] mirror the servo fairing
-- [x] create servo fairing .3mf file
-- [x] create wire guide .3mf file
-
 - [ ] Full step-by-step assembly guide
-
-    - [x] wing build guide
-    - [x] tailfin build guide
-    - [x] 3D print assembly guide
-    - [x] tailfin mounting and control surface guide
-
-    -  [ ] exhaustive BOM
-        - [ ] all tools used
-        - [ ] all raw materials
-        - [ ] 3D printed part (with labels and letter key)
-
-    - [ ] electronics configuration guide
+    - [x] electronics configuration guide
         - [ ] plugging everything in
-        - [ ] setting up bldc motor and esc
-        - [ ] pairing ELRS receiver and controller
-        - [ ] creating a profile and configuring a mix
-
-    - [ ] supplementary info
-
-
+        
 - [ ] film flight
-- [ ] add specs to datasheet
 - [ ] design rear fairing
     - [ ] update assembly guide with rear fairing
-
-
 - [ ] create a PDF from the markdown files
-
 
 - [ ] release
 - [ ] Film full step-by-step guide

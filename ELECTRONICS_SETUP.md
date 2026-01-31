@@ -1,5 +1,11 @@
 # Electronics Setup
 
+## Plugging Everything In
+
+TODO: add pictures
+TODO: explain what channel connects to what
+TODO: tell the user to label setuff
+
 ## Binding ELRS
 
 ### Traditional Method (No Binding Phrase)
