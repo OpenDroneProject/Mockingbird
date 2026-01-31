@@ -4,13 +4,32 @@
         - [ ] plugging everything in
         - [ ] fix EdgeTX diagrams in electronics, or add images
         
-- [ ] film flight
 - [ ] design rear fairing
     - [ ] update assembly guide with rear fairing
 - [ ] create a PDF from the markdown files
 
+- [ ] order braided 3k 5mm carbon fiber tube
+
 - [ ] release
 - [ ] Film full step-by-step guide
+
+## Maiden Flight Feedback
+
+10mph winds with 25mph gusts
+
+Cons: 
+
+Extremely hard to handle in wind due to high aspect, low authority, and torsional displacement of tailfin.
+
+- Too much torsional displacement in tail. Need to try Carbon Fiber tube instead of rod (this should also save on mass a bit)
+
+- Low authority. Attach pushrods to the far end of the servo horn, but close end of the control surface horn.
+
+- all controls had to be inverted. Left roll should raise left aileron, pitch up should raise elevator, yaw right should move rudder right. Document how to invert the mix in edge tx
+
+Pros:
+- 30mins estimated flight
+- extremely good glide slop
 
 ## 3D CAD
 
