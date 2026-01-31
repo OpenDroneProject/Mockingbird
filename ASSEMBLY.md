@@ -1,8 +1,15 @@
 # Assembly
 
+This guide will be updated iteratively as I build more copies of the drone and learn more efficient techniques. If at any point something is unclear, feel free to open an issue in the repo. You can also reference the raw CAD file to see how things fit together.
+
+![](./images/construction/CAD_IMAGE.png)
+
 ### Parts List
 
 #### 3D Printed Parts
+
+STL files contained at `./CAD/3D Printed Parts/STL`.  
+Ready-to-print `.3mf` files at `./CAD/3D Printed Parts/GCODE`.
 
 <img src="./images/construction/BIG_PARTS.jpg" width="600">    
 
@@ -52,7 +59,7 @@ These parts can be printed in anything, but I recommend using PETG for anything 
 
 ### Pod Assembly
 
-Motor mount, BR2208 motor, screws.  
+Motor mount, 2208 motor, screws.  
 <img src="./images/construction/POD_1.jpg" width="600">  
 
 Attach the motor to the motor mount.  
@@ -75,6 +82,8 @@ Insert your servos into the mounts with the included mounting screws.
 
 ### Tailfin Assembly
 
+PDF templates at `./CAD/Foam Templates/PDF`.  
+
 If you have never cut control surfaces into foamboard, I recommend [this video](https://www.youtube.com/watch?v=e1_pjhQWj98)   
 
 Print out the tailfin templates. The PDF is already sized for 8.5x11" printer paper. Do not rescale the page or apply margins. Tape the pages together and cut out the templates.  
@@ -89,7 +98,11 @@ Glue the vertical and horizontal stabilizer together.
 Glue the tailfin mount to the underside of the tail fins and use a screwdriver to puncture holes through the horizontal stabilizer. Secure the tailfin reinforcements to the tailfin mount with two 20mm length M2 screws and two 8mm M2 screws. You may optionally glue down the tailfin reinforcements to add extra rigidity to the vertical stabilizer.  
 <img src="./images/construction/TAIL_3.jpg" width="600">
 
+TODO: add an image showing how the tailfin mount is glued to the tailfin
+
 ### Wing Assembly
+
+TODO: better wing assembly instructions
 
 I would recommend watching [this short video](https://www.youtube.com/watch?v=qJZoqGHAIDE) to understand the basic design of this wing. The wing is attached to the pod with four M4 screws, and can be swapped out for your own custom design. The design I am using is a called an "Armin wing" in the hobbyist community. [Kline-Fogelman](https://en.wikipedia.org/wiki/Kline%E2%80%93Fogleman_airfoil) airfoils may be simpler to build, and should provide a larger wing area for the same quanitity of foamboard.  
 
@@ -112,13 +125,17 @@ Pyramid sandwich example.
 
 The folding step is a bit difficult to describe. I recommend watching [this video](https://youtu.be/bllvhjr51Lk?si=4DFRSW2RofPoi4HL&t=564) from timestamps 9:30 to 12:30 if you are a beginner and you struggle to assemble the wing. My wing design is *heavily* inspired by the wing on the Joytrainer Mini, and the construction techniques are identical.
 
+Take the left and right wings, and connect them with the carbon fiber spar. The spar should be half in the left wing and half in the right wing.
+
+TODO: add a picture of putting the wings together
+
 Using the Wing Screw Plate as a guide, use a screwdriver to puncture the fully-glued wing with 4 holes.  
 <img src="./images/construction/WINGS_4.jpg" width="600">
 
 Insert four 30mm length M4 screws into the wing.  
 <img src="./images/construction/WINGS_5.jpg" width="600">
 
-Underside view  
+Underside view (forgive my terrible quality control)  
 <img src="./images/construction/WINGS_6.jpg" width="600">
 
 Insert your servos into the servo fairings and secure them with screws. 

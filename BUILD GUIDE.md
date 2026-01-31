@@ -91,12 +91,3 @@ It is easier to adjust your balance by moving the tailfin length, so the length 
 
 **Use 1.2mm wire control rods for tail control surfaces**  
 The tail control surfaces are far away from the servos, and 0.64mm piano wire will deform. 1.2mm wire is thick enough to withstand the forces, while also deflecting the desired amount along its path from the servo to the control surface.
-
-#### TODO: all 3D parts labeled
-
-#### Motor Mount
-
-<img src="./images/construction/motor_mount_1.jpg" alt="Carbon fiber spar sandwiched in foam" width="500">  
-<img src="./images/construction/motor_mount_2.jpg" alt="Carbon fiber spar sandwiched in foam" width="500">  
-
-<img src="./images/construction/motor_mount_attach_body.jpg" alt="Carbon fiber spar sandwiched in foam" width="500">  
