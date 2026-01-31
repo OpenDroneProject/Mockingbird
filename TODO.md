@@ -2,6 +2,7 @@
 - [ ] Full step-by-step assembly guide
     - [x] electronics configuration guide
         - [ ] plugging everything in
+        - [ ] fix EdgeTX diagrams in electronics, or add images
         
 - [ ] film flight
 - [ ] design rear fairing
@@ -27,13 +28,9 @@ total: 30g
 new weight ~745g
 
 ### WEBSITE TODO
-
-- [ ] add educational links to website
+- [ ] add mockingbird videos to website
 - [ ] add corvus flight footage to website
-
-### Performance Tuning
-- [ ] compare flight with vs without front fairing
-- [ ] compare flight with vs without middle fairing
+- [ ] update docs and information on website
 
 ### Engineering Docs
 - [ ] interface control document
@@ -42,11 +39,7 @@ new weight ~745g
 - [ ] TRL assessment
 - [ ] iterate
 
-Inspirations:
-https://www.thingiverse.com/thing:7187147
-https://github.com/FreeCAD/FreeCAD-library/tree/master
-
-# V2
+# V1.0
 - [ ] weight optimization
 - [ ] improved electronics stack with autonomy
 - [ ] winglets and other performance enhancements
