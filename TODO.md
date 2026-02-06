@@ -1,18 +1,16 @@
 # TODO
+
 - [ ] Full step-by-step assembly guide
     - [x] electronics configuration guide
         - [ ] plugging everything in
         - [ ] fix EdgeTX diagrams in electronics, or add images
+        - [ ] edge tX inverse mix
         
-- [ ] design rear fairing
-    - [ ] update assembly guide with rear fairing
-- [ ] create a PDF from the markdown files
-
-- [ ] order braided 3k 5mm carbon fiber tube
-
-- [ ] release
-- [ ] Film full step-by-step guide
-
+- [x] design rear fairing
+- [ ] print opposite servo fairings
+- [ ] start putting together flight computer while that is going on
+- [ ] build brand-new drone from scratch (again)
+- [ ] update assembly guide with rear fairing, aluminum tube, opposing servo positions, and updated pushrod configuration
 ## Maiden Flight Feedback
 
 10mph winds with 25mph gusts
