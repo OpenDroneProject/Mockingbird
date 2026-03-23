@@ -1,14 +1,29 @@
 # TODO
 
+### Make New Plane
+- [ ] Pod
+- [ ] Rear fairing
+- [ ] front fairing
+- [ ] bottom fairing
+- [ ] top fairing
+- [ ] PETG parts
+- [ ] motor mount
+- [ ] servo fairings
+
 - [ ] Full step-by-step assembly guide
     - [x] electronics configuration guide
         - [ ] plugging everything in
         - [ ] fix EdgeTX diagrams in electronics, or add images
         - [ ] edge tX inverse mix
+
+VTX CONNECT TO SPEEDYBEE:
+tx5 is smartaudio, vv is voltage+ for the vtx, and VTX is video
+so as it is labelled, Vv = 7-26v input, GND = GND, TX5 = smart audio, and VTX = video
         
 - [x] design rear fairing
 - [ ] print opposite servo fairings
 - [ ] start putting together flight computer while that is going on
+
 - [ ] build brand-new drone from scratch (again)
 - [ ] update assembly guide with rear fairing, aluminum tube, opposing servo positions, and updated pushrod configuration
 ## Maiden Flight Feedback
