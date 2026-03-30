@@ -1,5 +1,15 @@
 # TODO
 
+### Revisons for FC stack
+- [x] redesign pod to hold FC
+- [x] design VTX mount
+- [ ] design camera mount
+
+### Software
+- [ ] Charge battery and plug into FC
+- [ ] Flash INAV and test IMU
+- [ ] Test VTX and camera
+
 ### Make New Plane
 - [ ] Pod
 - [ ] Rear fairing
