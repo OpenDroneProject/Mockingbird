@@ -5,6 +5,9 @@
 - [x] design VTX mount
 - [ ] design camera mount and add to PETG parts list
 - [ ] redesign bottom fairing
+- [ ] redesign the tail mount system
+    - [ ] just try 30-min epoxy first instead of hot glue
+    - [ ] try drilling a hole and using a key
 
 ### Software
 - [x] Charge battery and plug into FC
@@ -18,8 +21,8 @@
 - [x] PETG parts
 - [x] motor mount
 - [x] servo fairings
-- [ ] Pod (x2)
 - [ ] VTX mount PETG (x2)
+- [ ] Pod (x2)
 
 - [ ] front fairing
 - [ ] Rear fairing
@@ -36,7 +39,8 @@ tx5 is smartaudio, vv is voltage+ for the vtx, and VTX is video
 so as it is labelled, Vv = 7-26v input, GND = GND, TX5 = smart audio, and VTX = video
         
 - [ ] build brand-new drone from scratch (again)
-- [ ] update assembly guide with rear fairing, aluminum tube, opposing servo positions, and updated pushrod configuration
+- [ ] update assembly guide with rear fairing, updated CF rod assembly info, opposing servo positions, and updated pushrod configuration (mor authority)
+
 ## Maiden Flight Feedback
 
 10mph winds with 25mph gusts
@@ -61,14 +65,6 @@ Wing screw-in hole spacing: 40mm long, 30mm wide
 
 1/13/2026 -- 730g fully-loaded
 1/27/2026 -- 775g fully-loaded, no rear fairing
-
-Estimated weight reduction from printing with OVERTURE PLA AIR, 30% per part.
-Savings:
-bottom fairing -- 10g
-front fairing -- 6g
-e payload -- 14g
-total: 30g
-new weight ~745g
 
 ### WEBSITE TODO
 - [ ] add mockingbird videos to website
