@@ -3,7 +3,7 @@
 ### Revisons for FC stack
 - [x] redesign pod to hold FC
 - [x] design VTX mount
-- [ ] design camera mount
+- [ ] design camera mount and add to PETG parts list
 - [ ] redesign bottom fairing
 
 ### Software
@@ -15,14 +15,15 @@
 - [ ] Static plane test 
 
 ### Make New Plane
-- [ ] Pod
-- [ ] VTX mount
-- [ ] Rear fairing
-- [ ] front fairing
-- [ ] bottom fairing
 - [x] PETG parts
 - [x] motor mount
 - [x] servo fairings
+- [ ] Pod (x2)
+- [ ] VTX mount PETG (x2)
+
+- [ ] front fairing
+- [ ] Rear fairing
+- [ ] bottom fairing
 
 - [ ] Full step-by-step assembly guide
     - [x] electronics configuration guide
