@@ -4,21 +4,25 @@
 - [x] redesign pod to hold FC
 - [x] design VTX mount
 - [ ] design camera mount
+- [ ] redesign bottom fairing
 
 ### Software
-- [ ] Charge battery and plug into FC
-- [ ] Flash INAV and test IMU
-- [ ] Test VTX and camera
+- [x] Charge battery and plug into FC
+- [x] Flash INAV and test IMU
+- [x] Test VTX and camera
+- [x] solder ELRS
+- [ ] Test ELRS with servos
+- [ ] Static plane test 
 
 ### Make New Plane
 - [ ] Pod
+- [ ] VTX mount
 - [ ] Rear fairing
 - [ ] front fairing
 - [ ] bottom fairing
-- [ ] top fairing
-- [ ] PETG parts
-- [ ] motor mount
-- [ ] servo fairings
+- [x] PETG parts
+- [x] motor mount
+- [x] servo fairings
 
 - [ ] Full step-by-step assembly guide
     - [x] electronics configuration guide
@@ -30,10 +34,6 @@ VTX CONNECT TO SPEEDYBEE:
 tx5 is smartaudio, vv is voltage+ for the vtx, and VTX is video
 so as it is labelled, Vv = 7-26v input, GND = GND, TX5 = smart audio, and VTX = video
         
-- [x] design rear fairing
-- [ ] print opposite servo fairings
-- [ ] start putting together flight computer while that is going on
-
 - [ ] build brand-new drone from scratch (again)
 - [ ] update assembly guide with rear fairing, aluminum tube, opposing servo positions, and updated pushrod configuration
 ## Maiden Flight Feedback
