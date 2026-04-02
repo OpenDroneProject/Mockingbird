@@ -6,21 +6,59 @@ TODO: add pictures
 TODO: explain what channel connects to what
 TODO: tell the user to label setuff
 
-## Binding ELRS
+## Radiomaster Setup
 
-### Traditional Method (No Binding Phrase)
+### 1. Enabling Internal RF (Fixes LUA "Loading" Hang)
+The Radiomaster Pocket must have its internal module powered and set to the correct protocol to communicate with ELRS.
+1.  Press the **[MDL]** button.
+2.  Press **[PAGE >]** once to reach the **SETUP** page.
+3.  Scroll down to **Internal RF**.
+4.  Set **Mode** to **CRSF** (this enables the ELRS module).
+5.  Ensure **External RF** is set to **OFF**.
 
+### 2. Binding ELRS
+
+#### Traditional Method (No Binding Phrase)
 1. Power the receiver on and off three times consecutively (with roughly 2-second intervals).
 2. The LED should start blinking twice in a cycle, indicating it is in binding mode.
-3. Open the ExpressLRS LUA script on your transmitter and select the [Bind] option.
+3. Open the ExpressLRS LUA script on your transmitter ([SYS] -> ExpressLRS) and select the **[Bind]** option.
 4. The receiver LED will turn solid when successfully paired.
 
-### Binding Phrase Method (Recommended)
+#### Binding Phrase Method (Recommended via Wi-Fi)
+This method allows you to "lock" your radio to your receiver without manual binding. You must set the **same phrase** on both.
 
-1. Use the ELRS Configurator to flash both your transmitter and receiver with a custom binding phrase.
-2. Power on the receiver. It will automatically bind with the transmitter without needing button presses or power cycling.
+**A. Configure the Radio (Transmitter):**
+1.  Open the **ExpressLRS** LUA script on your radio ([SYS] -> ExpressLRS).
+2.  Select **[WiFi Enable]**.
+3.  On your PC/Phone, connect to the Wi-Fi network: `ExpressLRS TX` (Password: `expresslrs`).
+4.  Open a browser to `http://10.0.0.1`.
+5.  Enter your custom **Binding Phrase** and click **Save**.
 
-[How to flash ELRS via WIFI](https://www.youtube.com/watch?v=8poK--ln5J0)
+**B. Configure the Receiver (RP3-V2):**
+1.  **Power On:** Plug in the drone's battery or connect the flight controller to your PC via USB (if the receiver is powered by the FC's USB).
+2.  **Wait for Wi-Fi Mode:** Wait exactly **60 seconds** without turning on your radio.
+    *   The LED will first blink slowly (searching for radio).
+    *   After 60 seconds, the LED will start **flashing rapidly**, indicating it is now in Wi-Fi mode.
+3.  **Connect:** On your phone or PC, look for the Wi-Fi network: `ExpressLRS RX` (Password: `expresslrs`).
+4.  **Configure:** Open your browser and go to `http://10.0.0.1`.
+5.  **Save Phrase:** Type the **exact same Binding Phrase** used on the radio into the text box and click **Save & Reboot**.
+
+**C. Result:**
+Once both devices reboot, they will instantly pair (LED will turn **Solid Green**) as long as they share the same phrase.
+
+## PWM Control Pin Layout (INAV)
+
+For the **SpeedyBee F405 Wing Mini** using the standard Airplane mixer, connect your components to the following pins:
+
+| Pin Label | INAV Mixer | Control Axis | Component |
+| :--- | :--- | :--- | :--- |
+| **S1** | Motor 1 | Throttle | ESC Signal Wire |
+| **S2** | Servo 1 | Roll | Left Aileron Servo |
+| **S3** | Servo 2 | Pitch | Elevator Servo |
+| **S4** | Servo 3 | Yaw | Rudder Servo |
+| **S5** | Servo 4 | Roll | Right Aileron Servo (Optional) |
+
+**Note on Power:** Servos are powered by the built-in BEC. Ensure the **Servo Power Jumper** on the PDB board is bridged for the desired voltage (5V for standard servos, 6V for high-torque).
 
 ## Calibrating Motor
 

@@ -4,24 +4,28 @@
 - [x] redesign pod to hold FC
 - [x] design VTX mount
 - [ ] design camera mount and add to PETG parts list
+- [ ] CF tube clamp from parts lists
 - [ ] redesign bottom fairing
 - [ ] redesign the tail mount system
     - [ ] just try 30-min epoxy first instead of hot glue
-    - [ ] try drilling a hole and using a key
+- [ ] GPS wiring and config
 
 ### Software
 - [x] Charge battery and plug into FC
 - [x] Flash INAV and test IMU
 - [x] Test VTX and camera
 - [x] solder ELRS
+- [ ] Solder BEC connector
 - [ ] Test ELRS with servos
 - [ ] Static plane test 
+- [ ] document electronics setup
 
 ### Make New Plane
 - [x] PETG parts
 - [x] motor mount
 - [x] servo fairings
 - [ ] VTX mount PETG (x2)
+- [ ] camera mount
 - [ ] Pod (x2)
 
 - [ ] front fairing
@@ -40,6 +44,9 @@ so as it is labelled, Vv = 7-26v input, GND = GND, TX5 = smart audio, and VTX = 
         
 - [ ] build brand-new drone from scratch (again)
 - [ ] update assembly guide with rear fairing, updated CF rod assembly info, opposing servo positions, and updated pushrod configuration (mor authority)
+- [ ] update electronics guide
+    - [ ] no FC
+    - [ ] with FC
 
 ## Maiden Flight Feedback
 
@@ -58,6 +65,8 @@ Extremely hard to handle in wind due to high aspect, low authority, and torsiona
 Pros:
 - 30mins estimated flight
 - extremely good glide slop
+
+## FC Flight
 
 ## 3D CAD
 
@@ -79,7 +88,6 @@ Wing screw-in hole spacing: 40mm long, 30mm wide
 - [ ] iterate
 
 # V1.0
-- [ ] weight optimization
 - [ ] improved electronics stack with autonomy
 - [ ] winglets and other performance enhancements
 - [ ] assembly video

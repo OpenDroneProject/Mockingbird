@@ -24,9 +24,18 @@ The BN-880 and the SpeedyBee F405 Wing Mini both use 6-pin SH1.0 connectors, but
 | 5 | VCC (5V) | 4V5 | Pin 3 (V) |
 | 6 | SCL | SCL | Pin 2 (SCL) |
 
-**Note:** Connecting to `4V5` instead of `5V` or `V` allows the GPS to be powered by the USB cable during configuration.
+**Note:** Connecting to `4V5` instead of `5V` or `V` allows the GPS and Receiver to be powered by the USB cable during configuration.
 
-### **B. VTX & Camera (AKK Race Ranger & CADDX Ant)**
+### **B. Servo Power & ESC Connection**
+The SpeedyBee F405 Wing Mini has a unique power layout. By default, the servo pins (**Vx**) have **NO POWER**, even when a battery is plugged in.
+
+1.  **Activate Servo BEC:** You MUST solder the two pads of the **"Servo BEC Power Supply Jumper"** on the **back of the PDB board** shut. This connects the internal 4.5A BEC to the servo rail.
+2.  **ESC Wiring (S1):** For safety and reliability, use the FC's internal BEC to power servos, not the ESC's.
+    *   **Depin Red Wire:** Use a small needle to lift the plastic tab on the ESC's 3-wire connector and pull the **Red (5V)** wire out. Wrap it in electrical tape.
+    *   **Connect to S1:** Plug the ESC (now with only Signal and Ground) into the **S1** pins.
+3.  **Servo Connections:** Plug your servos into **S2 (Roll), S3 (Pitch), and S4 (Yaw)**.
+
+### **C. VTX & Camera (AKK Race Ranger & CADDX Ant)**
 To ensure clean video, we will power the camera from the VTX's filtered 5V output.
 
 1.  **VTX to FC:**
