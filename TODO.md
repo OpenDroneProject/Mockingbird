@@ -2,35 +2,44 @@
 
 ### Revisons for FC stack
 - [x] redesign pod to hold FC
-- [x] design VTX mount
-- [ ] design camera mount and add to PETG parts list
-- [ ] CF tube clamp from parts lists
-- [ ] redesign bottom fairing
+- [x] redesign bottom fairing to accomodate VTX mount changes
+
+- [ ] update rear fairing design to house ELRS receiver
+- [ ] mount GNSS in front fairing
+
 - [ ] redesign the tail mount system
-    - [ ] just try 30-min epoxy first instead of hot glue
-- [ ] GPS wiring and config
+- [ ] just try 30-min epoxy first instead of hot glue
 
 ### Software
 - [x] Charge battery and plug into FC
 - [x] Flash INAV and test IMU
 - [x] Test VTX and camera
 - [x] solder ELRS
-- [ ] Solder BEC connector
-- [ ] Test ELRS with servos
+- [x] Test ELRS with servos
+- [ ] assemble everything
+- [ ] calibrate IMU
+- [ ] get motor working
 - [ ] Static plane test 
 - [ ] document electronics setup
+    - [ ] all parts
+    - [ ] soldering
+    - [ ] wiring
+    - [ ] flashing
+    - [ ] setup
+        - [ ] inav
+        - [ ] edgetx
 
 ### Make New Plane
 - [x] PETG parts
 - [x] motor mount
 - [x] servo fairings
-- [ ] VTX mount PETG (x2)
+- [x] VTX mount PETG (x2)
 - [ ] camera mount
 - [ ] Pod (x2)
 
+- [ ] bottom fairing
 - [ ] front fairing
 - [ ] Rear fairing
-- [ ] bottom fairing
 
 - [ ] Full step-by-step assembly guide
     - [x] electronics configuration guide

@@ -145,3 +145,112 @@ In the **Ports** tab, set the following and click **Save and Reboot**:
 - [ ] Verify Failsafe behavior (Motor cut).
 - [ ] Calibrate the Battery Voltage in the **Power & Battery** tab.
 - [ ] Set up Modes (Arm, Angle/Horizon, Nav Launch, RTH) on your radio switches.
+
+Absolutely! Here’s a concise **README-style guide** combining everything you need to set up a new **EdgeTX profile** and get your **INAV flight controller** running for a fixed-wing drone like your MKBD F405 Wing Mini:
+
+---
+
+# README: EdgeTX + INAV Setup for Fixed-Wing (MKBD F405 Wing Mini)
+
+## 1. Create a New Model in EdgeTX
+
+1. **Power on** Radiomaster Pocket.
+2. Press **MENU → MODEL → Select an empty slot**.
+3. Choose **New Model** (or **Copy Model** to clone an old setup).
+4. Enter a **model name** (e.g., `MKBD Wing`).
+5. Select **Airplane / Wing** as model type.
+6. Assign **External Module → Protocol = CRSF** for ELRS receiver.
+7. Save the model.
+
+---
+
+## 2. Configure Inputs
+
+| Function          | Input / Channel |
+| ----------------- | --------------- |
+| Aileron           | CH1             |
+| Elevator / Elevon | CH2             |
+| Throttle / Motor  | CH3             |
+| Rudder            | CH4             |
+| Arm / AUX switch  | CH5             |
+
+* Verify stick movement in **Inputs tab**; bars should move with the stick.
+* Adjust **Reverse / Expo** if servo direction or sensitivity is wrong.
+
+---
+
+## 3. Assign Arming Switch
+
+1. Go to **MODEL SETUP → MODES**.
+2. Add a **Mode → ARM/DISARM**.
+3. Assign your **AUX switch channel** (e.g., CH5) and define the armed range.
+4. Press **Save**.
+5. Motor will only respond when armed; servos move even when disarmed.
+
+---
+
+## 4. Map Motor Output in INAV
+
+1. Go to **Configuration → Resource / Pin Assignments**.
+2. Assign **Motor 1** to the pin connected to your ESC (typically **S1**).
+3. Disable **Motor Stop** for immediate response.
+4. In **Mixer tab**, add:
+
+| Output  | Source | Scale |
+| ------- | ------ | ----- |
+| Motor 1 | THR    | 100%  |
+
+5. Save and reboot the FC.
+
+---
+
+## 5. Configure Servo Outputs
+
+| FC Pin | Function                          |
+| ------ | --------------------------------- |
+| S2     | Left Aileron                      |
+| S3     | Right Aileron (reverse if needed) |
+| S4     | Elevator                          |
+| S5     | Rudder                            |
+
+* In **Mixer tab**, assign outputs to sources: AIL, AIL2, ELE, RUD.
+* Enable **Reverse** for any servo moving opposite direction of stick input.
+
+---
+
+## 6. Bind ELRS Receiver
+
+1. Put receiver in **bind mode**.
+2. In EdgeTX: **MODEL SETUP → EXTERNAL MODULE → Bind**.
+3. Confirm **Status = ON**, **Baudrate = 500k**, **Receiver = CRSF**.
+4. Verify stick movement in **Receiver tab** of INAV.
+
+---
+
+## 7. Testing Checklist (No Propeller)
+
+1. Check **Ailerons** move opposite directions with roll stick.
+2. Check **Elevator** moves up/down with pitch stick.
+3. Check **Rudder** moves left/right with yaw stick.
+4. Arm the FC using your **arm switch** (CH5).
+5. Slowly move **Throttle**; Motor 1 bar should respond.
+
+---
+
+## 8. Tips / Troubleshooting
+
+* **Throttle input moves in Receiver tab but Motor bar doesn’t** → check Motor 1 pin assignment & mixer.
+* **Servo moves opposite** → toggle **Reverse** in Mixer tab.
+* **No receiver input** → ensure **External Module → CRSF / 500k / Status ON** is set per model.
+* Always **remove propeller** when testing motor.
+
+---
+
+This README provides a **step-by-step reference** for creating a working EdgeTX profile and configuring the MKBD F405 Wing Mini in INAV.
+
+---
+
+If you want, I can make a **diagram showing the full FC pinout with motor and control surfaces, plus channel mapping from EdgeTX**, which makes this README visual and easier to follow.
+
+Do you want me to make that diagram?
+
