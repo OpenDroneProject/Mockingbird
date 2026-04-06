@@ -4,11 +4,10 @@
 - [x] redesign pod to hold FC
 - [x] redesign bottom fairing to accomodate VTX mount changes
 
-- [ ] update rear fairing design to house ELRS receiver
-- [ ] mount GNSS in front fairing
+- [x] update rear fairing design to house ELRS receiver
+- [x] mount GNSS in front fairing
 
-- [ ] redesign the tail mount system
-- [ ] just try 30-min epoxy first instead of hot glue
+- [ ] re-attach tail with 30-min epoxy
 
 ** Configure GPS compass orientation in INAV**
 ```
@@ -41,18 +40,21 @@ align_mag_yaw
 - [x] motor mount
 - [x] servo fairings
 - [x] VTX mount PETG (x2)
-- [ ] camera mount
+- [x] camera mount
 - [ ] Pod (x2)
 
-- [ ] bottom fairing
-- [ ] front fairing
+- [x] front fairing
 - [ ] Rear fairing
+- [ ] bottom fairing
 
+### Assembly Guide
 - [ ] Full step-by-step assembly guide
-    - [x] electronics configuration guide
-        - [ ] plugging everything in
-        - [ ] fix EdgeTX diagrams in electronics, or add images
-        - [ ] edge tX inverse mix
+- [x] electronics configuration guide
+    - [ ] plugging everything in
+    - [ ] fix EdgeTX diagrams in electronics, or add images
+    - [ ] edge tX inverse mix
+- [ ] wiring diagrams
+- [ ] electronics BOM
 
 VTX CONNECT TO SPEEDYBEE:
 tx5 is smartaudio, vv is voltage+ for the vtx, and VTX is video
