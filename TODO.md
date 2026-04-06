@@ -10,6 +10,13 @@
 - [ ] redesign the tail mount system
 - [ ] just try 30-min epoxy first instead of hot glue
 
+** Configure GPS compass orientation in INAV**
+```
+align_mag_pitch
+align_mag_roll
+align_mag_yaw
+```
+
 ### Software
 - [x] Charge battery and plug into FC
 - [x] Flash INAV and test IMU
