@@ -22,7 +22,7 @@ align_mag_yaw
 - [x] Test VTX and camera
 - [x] solder ELRS
 - [x] Test ELRS with servos
-- [ ] assemble everything
+- [ ] assemble everything and create guide
 - [ ] calibrate IMU
 - [ ] get motor working
 - [ ] Static plane test 
@@ -36,16 +36,7 @@ align_mag_yaw
         - [ ] edgetx
 
 ### Make New Plane
-- [x] PETG parts
-- [x] motor mount
-- [x] servo fairings
-- [x] VTX mount PETG (x2)
-- [x] camera mount
-- [ ] Pod (x2)
-
-- [x] front fairing
-- [ ] Rear fairing
-- [ ] bottom fairing
+- [x] make the bottom fairing thicker in all dimensions and re-print
 
 ### Assembly Guide
 - [ ] Full step-by-step assembly guide
