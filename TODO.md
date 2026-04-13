@@ -1,60 +1,32 @@
 # TODO
 
-### Revisons for FC stack
-- [x] redesign pod to hold FC
-- [x] redesign bottom fairing to accomodate VTX mount changes
-
-- [x] update rear fairing design to house ELRS receiver
-- [x] mount GNSS in front fairing
-
-- [ ] re-attach tail with 30-min epoxy
-
-** Configure GPS compass orientation in INAV**
-```
-align_mag_pitch
-align_mag_roll
-align_mag_yaw
-```
-
-### Software
-- [x] Charge battery and plug into FC
-- [x] Flash INAV and test IMU
-- [x] Test VTX and camera
-- [x] solder ELRS
-- [x] Test ELRS with servos
-- [ ] assemble everything and create guide
-- [ ] calibrate IMU
+- [ ] create winglets
 - [ ] get motor working
 - [ ] Static plane test 
+
+### Documentation
+- [ ] document assembly
+    - [ ] update CAD BOM
 - [ ] document electronics setup
+    - [ ] electronics BOM
     - [ ] all parts
     - [ ] soldering
     - [ ] wiring
+        - [ ] braided wires
     - [ ] flashing
     - [ ] setup
         - [ ] inav
         - [ ] edgetx
-
-### Make New Plane
-- [x] make the bottom fairing thicker in all dimensions and re-print
-
-### Assembly Guide
-- [ ] Full step-by-step assembly guide
-- [x] electronics configuration guide
-    - [ ] plugging everything in
-    - [ ] fix EdgeTX diagrams in electronics, or add images
-    - [ ] edge tX inverse mix
 - [ ] wiring diagrams
-- [ ] electronics BOM
 
 VTX CONNECT TO SPEEDYBEE:
 tx5 is smartaudio, vv is voltage+ for the vtx, and VTX is video
 so as it is labelled, Vv = 7-26v input, GND = GND, TX5 = smart audio, and VTX = video
         
-- [ ] build brand-new drone from scratch (again)
+- [x] build brand-new drone from scratch (again)
 - [ ] update assembly guide with rear fairing, updated CF rod assembly info, opposing servo positions, and updated pushrod configuration (mor authority)
 - [ ] update electronics guide
-    - [ ] no FC
+    - [x] no FC
     - [ ] with FC
 
 ## Maiden Flight Feedback
@@ -95,8 +67,3 @@ Wing screw-in hole spacing: 40mm long, 30mm wide
 - [ ] mass growth allowance
 - [ ] TRL assessment
 - [ ] iterate
-
-# V1.0
-- [ ] improved electronics stack with autonomy
-- [ ] winglets and other performance enhancements
-- [ ] assembly video
