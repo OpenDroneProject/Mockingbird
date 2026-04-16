@@ -15,7 +15,7 @@ A "strangler fig" approach is used — each custom board is validated against th
 | 3 | Ours | **Ours** | Ours |
 
 ### Open Items Before Starting
-- Measure the SpeedyBee FC board's USB extender connector pinout (physical silkscreen + continuity check)
+- ~~Measure the SpeedyBee FC board's USB extender connector pinout~~ — **Done.** 8-pin JST SH 1.0mm. Signals: `G, 4V5, D−, D+, TX6, BZ−, BT0, RX6`. USB-C on the stock extender board connects D+/D− directly to the STM32; the ESP8684 on that board connects via UART6 (TX6/RX6) and is not on the USB path.
 - Measure the SpeedyBee PDB↔FC 12-pin stacking connector pinout (physical silkscreen + continuity check)
 
 ---
@@ -246,27 +246,68 @@ Connects to the FC board to provide USB-C flashing capability. Not a permanent s
 
 ### Stage 1: SpeedyBee-Compatible Flasher
 
-The SpeedyBee FC board exposes a programming interface via its "Wireless USB Extender" connector. Our flasher board mates with this connector and replaces the SpeedyBee wireless extender with a direct USB-C connection.
+The SpeedyBee FC board exposes a programming interface via its "Wireless USB Extender" connector. Our replacement board mates with this connector and provides a direct USB-C connection — no ESP32, no wireless stack.
 
-> **Required before design:** Measure the SpeedyBee FC board's USB extender connector — note connector type, pin count, and silkscreen labels. Confirm with continuity check which pins carry D+, D−, 5V, GND, and whether BOOT0/NRST are exposed.
+#### SpeedyBee USB Extender Connector Pinout
+
+8-pin JST SH 1.0mm. Exact physical pin ordering to be confirmed with continuity check, but all eight signals are identified from silkscreen:
+
+| Signal | Function |
+|--------|----------|
+| `G` | Ground |
+| `4V5` | 4.5V regulated power — the stock extender board generates this from USB VBUS and supplies it back to the FC |
+| `D−` | USB data− → STM32 USB peripheral |
+| `D+` | USB data+ → STM32 USB peripheral |
+| `TX6` | UART6 TX (STM32 side) — connected to ESP8684 on stock board; unused on our replacement |
+| `BZ−` | Buzzer negative drive |
+| `BT0` | STM32 BOOT0 — pull high to enter USB DFU mode |
+| `RX6` | UART6 RX (STM32 side) — unused on our replacement |
 
 #### Bill of Materials
 
 | Component | Part | Notes |
 |-----------|------|-------|
+| JST SH 1.0mm receptacle | 8-pin | Mates with SpeedyBee USB extender port |
 | USB-C receptacle | GCT USB4135-GF-A | Mid-mount, low profile |
 | ESD protection | USBLC6-2SC6 | On D+, D−, and VBUS |
 | CC resistors | 5.1kΩ 0402 × 2 | CC1 and CC2 to GND — mandatory for USB-C device role |
-| BOOT button | 3×6mm SMD tactile switch | Pulls BOOT0 high if SpeedyBee exposes it; otherwise used only for our custom FC |
-| RESET button | 3×6mm SMD tactile switch | Pulls NRST low if SpeedyBee exposes it; otherwise used only for our custom FC |
-| Power LED | 0402 LED + 1kΩ resistor | Confirms VBUS is live |
-| Decoupling caps | 10µF + 100nF on VBUS | |
-| FC connector | TBD — match SpeedyBee USB extender port | Pinout to be measured from physical board |
+| 4.5V regulator | Schottky diode (e.g. 1N5819) in series with VBUS | Simple 0.5V drop from 5V → ~4.5V; replace with low-dropout LDO if more precision is needed |
+| Bulk cap on 4.5V rail | 10µF + 100nF | After the diode |
+| Buzzer | Passive piezo buzzer, through-hole or SMD | Driven from BZ− pin; add flyback diode if inductive |
+| Power LED | 0402 LED + 1kΩ resistor | On 4.5V rail; confirms VBUS is live |
+
+> TX6 and RX6 are left unconnected. BOOT0 and NRST are not broken out to buttons on this board — DFU mode is entered via whatever method the SpeedyBee normally uses (e.g. holding the button on the FC itself, or via INAV Configurator's reboot-to-bootloader command).
+
+#### Implementation Plan
+
+1. **Schematic (KiCad)**
+   - USB-C receptacle: route D+/D− through USBLC6-2SC6 to `D+`/`D−` on JST connector
+   - VBUS: series 1N5819 Schottky → 10µF + 100nF → `4V5` on JST connector
+   - CC1 and CC2: 5.1kΩ to GND each
+   - `BZ−` on JST connector: wire to buzzer with flyback diode across buzzer pads
+   - `G` on JST connector: GND net
+   - Leave `TX6`, `RX6`, `BT0` as labeled no-connect stubs (documented but not routed)
+   - Power LED from 4.5V rail through 1kΩ resistor to GND
+
+2. **Layout (KiCad)**
+   - Keep board compact (~30×20mm)
+   - Place ESD protection (USBLC6-2SC6) as close to the USB-C receptacle as possible — minimise stub length on D+/D−
+   - Place Schottky and output caps adjacent to the JST connector
+   - Place buzzer on a short lead from BZ− — if through-hole, orient toward a board edge
+
+3. **Review**
+   - Verify Schottky forward voltage at expected load current — adjust if 4.5V target drifts significantly
+   - Confirm USBLC6-2SC6 clamping voltage is below STM32 USB input ratings
+   - Run KiCad DRC — zero errors before ordering
+
+4. **Fabrication**
+   - 2-layer board is sufficient
+   - All SMT components; buzzer may be through-hole
 
 #### Flashing Procedure (SpeedyBee)
-1. Plug flasher board into SpeedyBee USB extender port
+1. Plug replacement board into SpeedyBee USB extender port
 2. Connect USB-C to computer
-3. Enter DFU mode per SpeedyBee's method (may differ from our custom FC)
+3. Use INAV Configurator's "Reboot to Bootloader" command, or hold the BOOT button on the FC itself if accessible
 4. Flash via INAV Configurator
 
 ---

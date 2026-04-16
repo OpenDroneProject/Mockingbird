@@ -1,8 +1,19 @@
 # TODO
 
-- [ ] create winglets
-- [ ] get motor working
-- [ ] Static plane test 
+- [x] test VTX
+- [x] adjust camera
+- [x] get motor working
+- [x] Static plane test 
+- [ ] cut battery
+- [ ] fork and test external battery
+- [ ] add holes for screw-mounted FC
+
+- [ ] configure failsafe
+- [ ] finish setting up inav
+- [ ] land in safe zone
+
+- [ ] make camera mount slightly smaller
+- [ ] make camera mount not print PETG
 
 ### Documentation
 - [ ] document assembly
