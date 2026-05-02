@@ -1,19 +1,22 @@
 # TODO
 
-- [x] test VTX
-- [x] adjust camera
-- [x] get motor working
-- [x] Static plane test 
-- [ ] cut battery
-- [ ] fork and test external battery
-- [ ] add holes for screw-mounted FC
-
+## Configuration
+- [ ] adjust OSD
 - [ ] configure failsafe
 - [ ] finish setting up inav
 - [ ] land in safe zone
 
+- [ ] check out DEEPSEEK.md for advice to adjust mix
+
+## Design
 - [ ] make camera mount slightly smaller
 - [ ] make camera mount not print PETG
+
+- [ ] cut out space for FC to live
+- [ ] optional no GPS nosecone
+
+- [ ] shorten wingspan by like 30%
+- [ ] halve aileron size
 
 ### Documentation
 - [ ] document assembly
@@ -39,42 +42,3 @@ so as it is labelled, Vv = 7-26v input, GND = GND, TX5 = smart audio, and VTX = 
 - [ ] update electronics guide
     - [x] no FC
     - [ ] with FC
-
-## Maiden Flight Feedback
-
-10mph winds with 25mph gusts
-
-Cons: 
-
-Extremely hard to handle in wind due to high aspect, low authority, and torsional displacement of tailfin.
-
-- Too much torsional displacement in tail. Need to try Carbon Fiber tube instead of rod (this should also save on mass a bit)
-
-- Low authority. Attach pushrods to the far end of the servo horn, but close end of the control surface horn.
-
-- all controls had to be inverted. Left roll should raise left aileron, pitch up should raise elevator, yaw right should move rudder right. Document how to invert the mix in edge tx
-
-Pros:
-- 30mins estimated flight
-- extremely good glide slop
-
-## FC Flight
-
-## 3D CAD
-
-Wing screw-in hole spacing: 40mm long, 30mm wide
-
-1/13/2026 -- 730g fully-loaded
-1/27/2026 -- 775g fully-loaded, no rear fairing
-
-### WEBSITE TODO
-- [ ] add mockingbird videos to website
-- [ ] add corvus flight footage to website
-- [ ] update docs and information on website
-
-### Engineering Docs
-- [ ] interface control document
-- [ ] power budget
-- [ ] mass growth allowance
-- [ ] TRL assessment
-- [ ] iterate
