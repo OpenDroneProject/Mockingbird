@@ -12,11 +12,13 @@
 - [ ] make camera mount slightly smaller
 - [ ] make camera mount not print PETG
 
-- [ ] cut out space for FC to live
-- [ ] optional no GPS nosecone
+- [ ] Ailerons should just extend the outer half of the wing
+- [ ] Design shorter wing (30%)
+- [ ] Design wing that cuts hamburger instead of hotdog
 
-- [ ] shorten wingspan by like 30%
-- [ ] halve aileron size
+- [ ] cut out space for FC to live
+- [ ] optional no GPS nosecone part
+
 
 ### Documentation
 - [ ] document assembly
